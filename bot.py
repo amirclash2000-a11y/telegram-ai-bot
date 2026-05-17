@@ -14,7 +14,7 @@ logger.info(f"GEMINI_API_KEY is {'SET' if GEMINI_KEY != 'NOT_SET' else 'NOT SET'
 logger.info(f"TELEGRAM_TOKEN is {'SET' if TELEGRAM_KEY != 'NOT_SET' else 'NOT SET'}")
 
 genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
